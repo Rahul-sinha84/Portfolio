@@ -70,13 +70,14 @@ body {
   height: 83.5vh;
   display: flex;
   width: 85%;
-  margin: 1rem auto; }
+  margin: 2rem auto; }
   .intro__left {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-right: 2.5rem; }
     .intro__left--title {
       font-size: 4.25rem;
       font-weight: bold;
@@ -98,5 +99,5 @@ body {
     border-radius: 100%;
     background-size: cover;
     background-image: url(../assets/profile-photo.jpg);
-    box-shadow: 0 0 1rem 1rem #f8f6f6 inset;
+    box-shadow: 0 0 2rem 2rem #f8f6f6 inset;
     filter: grayscale(100%); }
