@@ -1,2 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: Plusjakartadisplay, sans-serif; }
+
 body {
   background-color: #f8f6f6; }
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 2rem auto; }
+  .menubar__left {
+    flex: 1; }
+  .menubar__right {
+    display: flex;
+    flex: 2;
+    justify-content: space-evenly; }
+  .menubar--link {
+    cursor: pointer;
+    width: fit-content; }
+
+.btn1 {
+  position: relative;
+  cursor: pointer; }
+  .btn1__org {
+    position: absolute;
+    transform: translate(-0.5rem, -0.5rem);
+    padding: 1.25rem 1.875rem;
+    background-color: #1b1b1b;
+    transition: all 0.2s; }
+    .btn1__org--text {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem; }
+  .btn1__back {
+    padding: 1.25rem 1.875rem;
+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%); }
+    .btn1__back--text {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      visibility: hidden; }
+  .btn1:hover .btn1__org {
+    transform: translate(0rem, 0rem); }
+
+.btn2 {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  align-items: center; }
+  .btn2__text {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem; }
+  .btn2__arrow {
+    margin-left: 0.2rem;
+    transition: all 0.2s; }
+    .btn2__arrow img {
+      width: 100%; }
+  .btn2__text:hover + .btn2__arrow {
+    margin-left: 0.8rem; }
+
+.intro {
+  height: 83.5vh;
+  display: flex;
+  width: 85%;
+  margin: 1rem auto; }
+  .intro__left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .intro__left--title {
+      font-size: 4.25rem;
+      font-weight: bold;
+      line-height: 4rem;
+      margin: 1.5rem 0; }
+      .intro__left--title span {
+        display: inline-block;
+        background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+        -webkit-background-clip: text;
+        color: transparent; }
+    .intro__left--sub-title {
+      font-size: 1.2rem;
+      color: #666; }
+    .intro__left--btn-container {
+      display: flex;
+      margin: 1.5rem 0; }
+  .intro__right {
+    flex: 1;
+    border-radius: 100%;
+    background-size: cover;
+    background-image: url(../assets/profile-photo.jpg);
+    box-shadow: 0 0 1rem 1rem #f8f6f6 inset;
+    filter: grayscale(100%); }

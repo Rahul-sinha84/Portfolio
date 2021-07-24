@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Plusjakartadisplay, sans-serif;
+}
 body {
-  background-color: #f8f6f6;
+  background-color: $bg-color;
 }

@@ -1,8 +1,9 @@
 import React from "react";
 import "./style/index.css";
+import Page from "./pages";
 
 const App = () => {
-  return <div>App</div>;
+  return <Page />;
 };
 
 export default App;
