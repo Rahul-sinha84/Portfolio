@@ -75,6 +75,7 @@ const about = () => {
             <div className="about__lower--right__lower--item">React-Native</div>
             <div className="about__lower--right__lower--item">GraphQL</div>
             <div className="about__lower--right__lower--item">ReduxJS</div>
+            <div className="about__lower--right__lower--item">SASS</div>
           </div>
         </div>
       </div>

@@ -1,0 +1,53 @@
+.project {
+  background-color: #000;
+  width: 100%;
+  padding: 1rem 0;
+  &__container {
+    width: 85%;
+    margin: 5rem auto;
+    &--heading {
+      font-size: 3rem;
+      letter-spacing: 0.4rem;
+      font-weight: 700;
+    }
+    &--typo {
+      color: #fff;
+      margin: 2rem 0;
+      &__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      &__sub-title {
+        font-size: 1.5rem;
+      }
+    }
+    &--slider {
+      overflow: hidden;
+      &__components {
+        display: flex;
+        transition: all 0.5s;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      &__btn-container {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        &--btn {
+          height: 3rem;
+          width: 3rem;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          img {
+          }
+        }
+        #next {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

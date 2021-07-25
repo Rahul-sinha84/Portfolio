@@ -8,7 +8,9 @@
 @import "./base//utilities";
 
 @import "./components/menubar";
-@import "./components//buttons";
+@import "./components/buttons";
+@import "./components/project";
 
 @import "./pages/intro";
 @import "./pages/about";
+@import "./pages/project";

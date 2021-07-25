@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "../components/menubar";
 import Intro from "./intro";
 import About from "./about";
+import Project from "./projects";
 
 const index = () => {
   return (
@@ -9,6 +10,7 @@ const index = () => {
       <Menu />
       <Intro />
       <About />
+      <Project />
       <div>Full Page</div>
     </>
   );
