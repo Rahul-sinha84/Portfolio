@@ -80,7 +80,7 @@ body {
   height: 83.5vh;
   display: flex;
   width: 85%;
-  margin: 2rem auto; }
+  margin: 5rem auto; }
   .intro__left {
     display: flex;
     flex: 1;
@@ -106,7 +106,7 @@ body {
 
 .about {
   width: 85%;
-  margin: 1.5rem auto;
+  margin: 8rem auto;
   height: 100vh; }
   .about__heading {
     font-size: 1.5rem;
@@ -119,7 +119,7 @@ body {
     margin: 5rem 0; }
     .about__lower--left {
       flex: 1;
-      padding: 0 1rem; }
+      padding-right: 1rem; }
       .about__lower--left__heading {
         font-size: 2.5rem;
         font-weight: 700; }
@@ -149,7 +149,7 @@ body {
               font-weight: 600; }
     .about__lower--right {
       flex: 1;
-      padding: 0 1rem; }
+      padding-left: 1rem; }
       .about__lower--right__heading {
         font-size: 2.5rem;
         font-weight: 700; }
