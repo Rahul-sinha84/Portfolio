@@ -1,0 +1,16 @@
+.para {
+  font-size: 1.2rem;
+  color: $clr-para;
+}
+.gradient-text {
+  display: inline-block;
+  background-image: linear-gradient(
+    108deg,
+    #b16cea 8%,
+    #ff5e69 40%,
+    #ff8a56 77%,
+    #ffa84b 91%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}

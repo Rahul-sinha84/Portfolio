@@ -7,10 +7,10 @@ const intro = () => {
     <div className="intro">
       <div className="intro__left">
         <div className="intro__left--title">
-          <span>Lorem ipsum se </span>
+          <span className="gradient-text">Lorem ipsum se </span>
           dolor sed do sit amet conse
         </div>
-        <div className="intro__left--sub-title">
+        <div className="intro__left--sub-title para">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
         </div>
