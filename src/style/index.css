@@ -7,7 +7,7 @@ html {
   font-family: "Merriweather Sans", sans-serif; }
 
 body {
-  background-color: #f8f6f6; }
+  background-color: #fff; }
 
 .para {
   font-size: 1.2rem;
@@ -38,7 +38,8 @@ body {
 
 .btn1 {
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  width: fit-content; }
   .btn1__org {
     position: absolute;
     transform: translate(-0.5rem, -0.5rem);
@@ -125,7 +126,7 @@ body {
     border-radius: 100%;
     background-size: cover;
     background-image: url(../assets/profile-photo.jpg);
-    box-shadow: 0 0 2rem 2rem #f8f6f6 inset;
+    box-shadow: 0 0 2rem 2rem #fff inset;
     filter: grayscale(100%); }
 
 .about {
@@ -305,3 +306,109 @@ body {
             margin: 1rem 0; }
             .section__container--achievement__container--item__position ul li {
               margin: 0.25rem 0; }
+
+.contact__container {
+  width: 85%;
+  margin: 8rem auto; }
+  .contact__container--title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem 0; }
+  .contact__container--container {
+    display: flex; }
+    .contact__container--container--left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-right: 1rem; }
+      .contact__container--container--left__title {
+        font-size: 3.5rem;
+        font-weight: 700; }
+      .contact__container--container--left__sub-title {
+        line-height: 2rem; }
+      .contact__container--container--left__info--item {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0; }
+        .contact__container--container--left__info--item img {
+          width: 2.5rem; }
+        .contact__container--container--left__info--item a {
+          margin-left: 1rem;
+          font-weight: 600;
+          text-decoration: none; }
+      .contact__container--container--left__info--social {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3rem 0; }
+        .contact__container--container--left__info--social a img,
+        .contact__container--container--left__info--social a svg {
+          width: 3rem;
+          cursor: pointer;
+          filter: grayscale(100%);
+          transition: all 0.2s; }
+          .contact__container--container--left__info--social a img:hover,
+          .contact__container--container--left__info--social a svg:hover {
+            stroke: #000;
+            filter: grayscale(0); }
+    .contact__container--container--right {
+      flex: 1;
+      padding-left: 1rem; }
+      .contact__container--container--right__form--names {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .contact__container--container--right__form--names__item {
+          display: flex;
+          width: 48%;
+          flex-direction: column; }
+          .contact__container--container--right__form--names__item label {
+            font-size: 1.05rem;
+            font-weight: 700; }
+          .contact__container--container--right__form--names__item input {
+            width: 100%;
+            font-size: 1rem;
+            padding: 1.2rem 1.5rem;
+            border: none;
+            background-color: #f2f6f7;
+            outline: none;
+            margin: 1rem 0; }
+      .contact__container--container--right__form--email label {
+        font-size: 1.05rem;
+        font-weight: 700; }
+      .contact__container--container--right__form--email__container {
+        background-color: #f2f6f7;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 0rem 1.5rem; }
+        .contact__container--container--right__form--email__container img {
+          margin-right: 1rem; }
+        .contact__container--container--right__form--email__container input {
+          font-size: 1rem;
+          border: none;
+          background-color: #f2f6f7;
+          outline: none;
+          margin: 1rem 0;
+          width: 100%;
+          padding: 0.5rem 0.5rem; }
+      .contact__container--container--right__form--message {
+        display: flex;
+        flex-direction: column; }
+        .contact__container--container--right__form--message label {
+          font-size: 1.05rem;
+          font-weight: 700; }
+        .contact__container--container--right__form--message textarea {
+          font-size: 1rem;
+          border: none;
+          margin: 1rem 0;
+          background-color: #f2f6f7;
+          outline: none;
+          width: 100%;
+          padding: 1rem 1.5rem;
+          resize: none; }
+      .contact__container--container--right__form--btn-container {
+        margin-top: 2rem;
+        margin-left: 0.5rem; }

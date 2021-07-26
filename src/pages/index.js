@@ -4,6 +4,7 @@ import Intro from "./intro";
 import About from "./about";
 import Project from "./projects";
 import Section from "./section";
+import Contact from "./contact";
 
 const index = () => {
   return (
@@ -13,6 +14,7 @@ const index = () => {
       <About />
       <Project />
       <Section />
+      <Contact />
       <div>Full Page</div>
     </>
   );

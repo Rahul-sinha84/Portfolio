@@ -1,6 +1,7 @@
 .btn1 {
   position: relative;
   cursor: pointer;
+  width: fit-content;
   &__org {
     position: absolute;
     transform: translate(-0.5rem, -0.5rem);
