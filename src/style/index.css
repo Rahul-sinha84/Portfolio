@@ -230,3 +230,78 @@ body {
           cursor: pointer; }
         .project__container--slider__btn-container #next {
           margin-left: 1rem; }
+
+.section {
+  margin: 8rem 0; }
+  .section__container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex; }
+    .section__container--experience {
+      flex: 1;
+      padding-right: 1rem; }
+      .section__container--experience__title {
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 2rem; }
+      .section__container--experience__container--item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #d4d4d4;
+        margin: 2rem 0;
+        padding-bottom: 1.5rem; }
+        .section__container--experience__container--item__left {
+          flex: 1; }
+          .section__container--experience__container--item__left--title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-decoration: underline; }
+          .section__container--experience__container--item__left--sub-title {
+            color: #666;
+            font-weight: 600;
+            margin-bottom: 0.5rem; }
+          .section__container--experience__container--item__left--position {
+            font-size: 1.01rem;
+            font-weight: 700; }
+            .section__container--experience__container--item__left--position ul {
+              font-weight: 400;
+              list-style-position: inside;
+              color: #666;
+              margin: 1rem 0; }
+              .section__container--experience__container--item__left--position ul li {
+                margin: 0.25rem 0; }
+        .section__container--experience__container--item__right--duration {
+          font-size: 1.1rem;
+          color: #666;
+          font-weight: 600; }
+    .section__container--achievement {
+      flex: 1;
+      padding-left: 1rem; }
+      .section__container--achievement__title {
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 2rem; }
+      .section__container--achievement__container--item {
+        border-bottom: 1px solid #d4d4d4;
+        margin: 2rem 0;
+        padding-bottom: 1.5rem; }
+        .section__container--achievement__container--item__title {
+          font-size: 1.3rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+          text-decoration: underline; }
+        .section__container--achievement__container--item__sub-title {
+          color: #666;
+          font-weight: 600;
+          margin-bottom: 0.5rem; }
+        .section__container--achievement__container--item__position {
+          font-size: 1.01rem;
+          font-weight: 700; }
+          .section__container--achievement__container--item__position ul {
+            font-weight: 400;
+            list-style-position: inside;
+            color: #666;
+            margin: 1rem 0; }
+            .section__container--achievement__container--item__position ul li {
+              margin: 0.25rem 0; }

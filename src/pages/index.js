@@ -3,6 +3,7 @@ import Menu from "../components/menubar";
 import Intro from "./intro";
 import About from "./about";
 import Project from "./projects";
+import Section from "./section";
 
 const index = () => {
   return (
@@ -11,6 +12,7 @@ const index = () => {
       <Intro />
       <About />
       <Project />
+      <Section />
       <div>Full Page</div>
     </>
   );
