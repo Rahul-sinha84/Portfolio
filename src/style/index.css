@@ -51,7 +51,11 @@ body {
     justify-content: space-evenly; }
   .menubar--link {
     cursor: pointer;
-    width: fit-content; }
+    width: fit-content;
+    text-decoration: none;
+    color: #000; }
+    .menubar--link:visited, .menubar--link:active {
+      color: #000; }
   @media (max-width: 56.25em) {
     .menubar {
       font-size: 0.8rem; } }
@@ -59,7 +63,8 @@ body {
 .btn1 {
   position: relative;
   cursor: pointer;
-  width: fit-content; }
+  width: fit-content;
+  display: block; }
   .btn1__org {
     position: absolute;
     transform: translate(-0.5rem, -0.5rem);
@@ -100,7 +105,10 @@ body {
   .btn2__text {
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-decoration: none; }
+    .btn2__text:visited {
+      color: #000; }
     @media (max-width: 56.25em) {
       .btn2__text {
         font-size: 1rem; } }

@@ -1,23 +1,31 @@
 import React from "react";
 import arrow from "../assets/arrow.svg";
 
-export const Btn1 = ({ text }) => {
+export const Btn1 = ({ text, href = "#" }) => {
   return (
-    <div className="btn1">
+    <a href={href} className="btn1">
       <div className="btn1__org">
         <div className="btn1__org--text">{text}</div>
       </div>
       <div className="btn1__back">
         <div className="btn1__back--text">{text}</div>
       </div>
-    </div>
+    </a>
   );
 };
 
-export const Btn2 = ({ text }) => {
+export const Btn2 = ({ text, href = "#", toDownload = false }) => {
   return (
     <div className="btn2">
-      <div className="btn2__text">{text}</div>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={href}
+        download={toDownload ? "Rahul's Resume" : null}
+        className="btn2__text"
+      >
+        {text}
+      </a>
       <div className="btn2__arrow">
         <img src={arrow} alt="arrow" />
       </div>

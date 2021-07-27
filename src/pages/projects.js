@@ -30,7 +30,7 @@ const Projects = () => {
     });
   }, []);
   return (
-    <div className="project">
+    <div id="myProjects" className="project">
       <div className="project__container">
         <div className="project__container--heading gradient-text">
           PROJECTS

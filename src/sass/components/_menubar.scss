@@ -16,6 +16,12 @@
   &--link {
     cursor: pointer;
     width: fit-content;
+    text-decoration: none;
+    color: #000;
+    &:visited,
+    &:active {
+      color: #000;
+    }
   }
   @include respond(tab-port) {
     font-size: 0.8rem;

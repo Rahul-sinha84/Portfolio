@@ -1,6 +1,7 @@
 import React from "react";
 import { Btn1 } from "../components/btn";
 import { Btn2 } from "../components/btn";
+import resumePath from "../assets/resume.pdf";
 
 const intro = () => {
   return (
@@ -15,8 +16,8 @@ const intro = () => {
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
         </div>
         <div className="intro__left--btn-container">
-          <Btn1 text="Contact Me" />
-          <Btn2 text="Download CV" />
+          <Btn1 href="#contactMe" text="Contact Me" />
+          <Btn2 toDownload={true} href={resumePath} text="Download CV" />
         </div>
       </div>
       <div className="intro__right"></div>

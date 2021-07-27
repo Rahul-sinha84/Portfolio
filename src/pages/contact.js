@@ -10,7 +10,7 @@ const Contact = () => {
     alert("dsafsda");
   };
   return (
-    <div className="contact">
+    <div id="contactMe" className="contact">
       <div className="contact__container">
         <div className="contact__container--title gradient-text">
           CONTACT ME
