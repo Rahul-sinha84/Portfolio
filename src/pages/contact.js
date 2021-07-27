@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import mailImg from "../assets/mail.svg";
 import phoneImg from "../assets/phone.svg";
 import devfolioImg from "../assets/devfolio.png";
 import linkedinImg from "../assets/lnkdin.png";
 import { Btn1 } from "../components/btn";
+const emailToSend = "rahul.sinha1562001@gmail.com";
 
 const Contact = () => {
-  const onSubmit = (e) => {
-    alert("dsafsda");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const onSubmit = async () => {
+    if (!firstName || !lastName || !email || !message) {
+      return alert("Please fill all the values...");
+    }
+    await fetch(`https://formsubmit.co/${emailToSend}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ firstName, lastName, email, message }),
+    })
+      .then((res) => {
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((err) => {
+        alert("Some error occurred !!");
+        console.log(err);
+      });
   };
   return (
     <div id="contactMe" className="contact">
@@ -82,6 +106,8 @@ const Contact = () => {
                 <div className="contact__container--container--right__form--names__item">
                   <label htmlFor="first">First Name</label>
                   <input
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                     id="first"
                     type="text"
                     placeholder="First Name"
@@ -91,6 +117,8 @@ const Contact = () => {
                 <div className="contact__container--container--right__form--names__item">
                   <label htmlFor="last">Last Name</label>
                   <input
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                     type="text"
                     id="last"
                     placeholder="Last Name"
@@ -103,6 +131,8 @@ const Contact = () => {
                 <div className="contact__container--container--right__form--email__container">
                   <img src={mailImg} alt="mail-img" />
                   <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     id="email"
                     type="email"
                     placeholder="Enter your E--mail"
@@ -113,6 +143,8 @@ const Contact = () => {
               <div className="contact__container--container--right__form--message">
                 <label htmlFor="message">Tell Me here </label>
                 <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   placeholder="Begin from here..."
                   maxLength="5000"
                   id="message"
@@ -123,7 +155,7 @@ const Contact = () => {
               </div>
               <div className="contact__container--container--right__form--btn-container">
                 <div onClick={onSubmit}>
-                  <Btn1 text="Submit Now !" />
+                  <Btn1 href="#contactMe" text="Submit Now !" />
                 </div>
               </div>
             </div>
