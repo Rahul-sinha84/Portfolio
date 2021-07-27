@@ -2,6 +2,13 @@ import React, { useEffect } from "react";
 import arrLeft from "../assets/arrow-left.svg";
 import arrRight from "../assets/arrow-right.svg";
 import Project from "../components/project";
+import Bloggyz from "../assets/bloggyz.png";
+import Natours from "../assets/natours.png";
+import SearchIt from "../assets/searchit.png";
+import Rbg from "../assets/rbg.png";
+import Portfolio from "../assets/portfolio.png";
+import CodingMonsters from "../assets/codingMonsters.png";
+import CryptoTrust from "../assets/cryptotrust.png";
 
 const Projects = () => {
   var prevBtn;
@@ -50,12 +57,41 @@ const Projects = () => {
             id="container"
             className="project__container--slider__components"
           >
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            <Project
+              link="https://github.com/Rahul-sinha84/Bloggyz"
+              name="Bloggyz"
+              imgSrc={Bloggyz}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Natours"
+              name="Natours"
+              imgSrc={Natours}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Search-It"
+              name="Search it"
+              imgSrc={SearchIt}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/RGB-game"
+              name="RGB Game"
+              imgSrc={Rbg}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Portfolio"
+              name="Portfolio"
+              imgSrc={Portfolio}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Coding-monsters"
+              name="Coding Monsters"
+              imgSrc={CodingMonsters}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/CryptoTrust"
+              name="Cryptotrust"
+              imgSrc={CryptoTrust}
+            />
           </div>
           <div className="project__container--slider__btn-container">
             <div
