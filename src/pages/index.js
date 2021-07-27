@@ -5,6 +5,7 @@ import About from "./about";
 import Project from "./projects";
 import Section from "./section";
 import Contact from "./contact";
+import Footer from "./footer";
 
 const index = () => {
   return (
@@ -15,7 +16,7 @@ const index = () => {
       <Project />
       <Section />
       <Contact />
-      <div>Full Page</div>
+      <Footer />
     </>
   );
 };

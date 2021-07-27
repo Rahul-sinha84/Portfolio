@@ -1,24 +1,43 @@
 .about {
   width: 85%;
   margin: 8rem auto;
-  height: 100vh;
   &__heading {
     font-size: 3rem;
     letter-spacing: 0.4rem;
     font-weight: 700;
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
   }
   &__info {
     margin: 1.5rem 0;
+    @include respond(tab-port) {
+      margin: 1rem 0;
+    }
   }
   &__lower {
     display: flex;
     margin: 5rem 0;
+    @include respond(tab-port) {
+      margin: 3rem 0;
+    }
     &--left {
       flex: 1;
       padding-right: 1rem;
       &__heading {
         font-size: 2.5rem;
         font-weight: 700;
+        @include respond(tab-land) {
+          font-size: 2rem;
+        }
+        @include respond(tab-port) {
+          font-size: 1.5rem;
+        }
       }
       &__lower {
         margin: 1rem auto;
@@ -34,10 +53,19 @@
             &--title {
               font-size: 1.3rem;
               font-weight: 600;
+              @include respond(tab-land) {
+                font-size: 1rem;
+              }
+              @include respond(tab-port) {
+                font-size: 0.9rem;
+              }
             }
             &--sub-title {
               color: $clr-para;
               font-weight: 600;
+              @include respond(tab-land) {
+                font-size: 0.8rem;
+              }
             }
           }
           &__container-2 {
@@ -47,6 +75,9 @@
               font-size: 1.1rem;
               color: $clr-para;
               font-weight: 600;
+              @include respond(tab-land) {
+                font-size: 0.8rem;
+              }
             }
           }
         }
@@ -71,6 +102,29 @@
           margin: 0.5rem 0.5rem;
           border-radius: 0.5rem;
           color: #fff;
+        }
+      }
+      @include respond(tab-land) {
+        &__heading {
+          font-size: 2rem;
+        }
+        &__lower {
+          &--item {
+            padding: 0.3rem 0.8rem;
+            font-size: 0.8rem;
+            margin: 0.3rem 0.3rem;
+          }
+        }
+      }
+      @include respond(tab-port) {
+        &__heading {
+          font-size: 1.5rem;
+        }
+        &__lower {
+          &--item {
+            padding: 0.2rem 0.6rem;
+            font-size: 0.6rem;
+          }
         }
       }
     }

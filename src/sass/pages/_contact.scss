@@ -6,6 +6,14 @@
       font-size: 3rem;
       font-weight: 700;
       margin: 2rem 0;
+      @include respond(tab-land) {
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+      }
+      @include respond(tab-port) {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
     }
     &--container {
       display: flex;
@@ -18,9 +26,21 @@
         &__title {
           font-size: 3.5rem;
           font-weight: 700;
+          @include respond(tab-land) {
+            font-size: 3rem;
+          }
+          @include respond(tab-port) {
+            font-size: 2.5rem;
+          }
         }
         &__sub-title {
           line-height: 2rem;
+          @include respond(tab-land) {
+            line-height: 1.5rem;
+          }
+          @include respond(tab-port) {
+            line-height: 1.3rem;
+          }
         }
         &__info {
           &--item {
@@ -29,6 +49,12 @@
             margin: 1rem 0;
             img {
               width: 2.5rem;
+              @include respond(tab-land) {
+                width: 2rem;
+              }
+              @include respond(tab-port) {
+                width: 1.5rem;
+              }
             }
             a {
               margin-left: 1rem;
@@ -42,6 +68,12 @@
             align-items: center;
             justify-content: space-between;
             margin: 3rem 0;
+            @include respond(tab-land) {
+              margin: 2rem 0;
+            }
+            @include respond(tab-port) {
+              margin: 1.8rem 0;
+            }
             a {
               img,
               svg {
@@ -52,6 +84,20 @@
                 &:hover {
                   stroke: #000;
                   filter: grayscale(0);
+                }
+                @include respond(tab-land) {
+                  width: 2.5rem;
+                }
+                @include respond(tab-port) {
+                  width: 2rem;
+                  &:hover {
+                    stroke: #999;
+                    filter: grayscale(100%);
+                  }
+                  &:active {
+                    stroke: #000;
+                    filter: grayscale(0);
+                  }
                 }
               }
             }
@@ -73,6 +119,12 @@
               label {
                 font-size: 1.05rem;
                 font-weight: 700;
+                @include respond(tab-land) {
+                  font-size: 1rem;
+                }
+                @include respond(tab-port) {
+                  font-size: 0.8rem;
+                }
               }
               input {
                 width: 100%;
@@ -82,6 +134,16 @@
                 background-color: #f2f6f7;
                 outline: none;
                 margin: 1rem 0;
+                @include respond(tab-land) {
+                  font-size: 0.8rem;
+                  padding: 1rem 1.3rem;
+                  margin: 0.8rem 0;
+                }
+                @include respond(tab-port) {
+                  font-size: 1rem;
+                  padding: 0.8rem 1rem;
+                  margin: 0.6rem 0;
+                }
               }
             }
           }
@@ -89,6 +151,12 @@
             label {
               font-size: 1.05rem;
               font-weight: 700;
+              @include respond(tab-land) {
+                font-size: 1rem;
+              }
+              @include respond(tab-port) {
+                font-size: 0.8rem;
+              }
             }
             &__container {
               background-color: #f2f6f7;
@@ -107,6 +175,29 @@
                 margin: 1rem 0;
                 width: 100%;
                 padding: 0.5rem 0.5rem;
+              }
+              @include respond(tab-land) {
+                margin: 0.8rem 0;
+                padding: 0 1.3rem;
+                img {
+                  margin-right: 0.5rem;
+                }
+                input {
+                  padding: 0.3rem 0.3rem;
+                  font-size: 0.8rem;
+                }
+              }
+              @include respond(tab-port) {
+                margin: 0.6rem 0;
+                padding: 0 1rem;
+                img {
+                  margin-right: 0.3rem;
+                  width: 1.2rem;
+                }
+                input {
+                  padding: 0.1rem 0.1rem;
+                  font-size: 1rem;
+                }
               }
             }
           }
@@ -128,10 +219,36 @@
               padding: 1rem 1.5rem;
               resize: none;
             }
+            @include respond(tab-land) {
+              label {
+                font-size: 1rem;
+              }
+              textarea {
+                font-size: 0.8rem;
+                margin: 0.8rem 0;
+                padding: 0.8rem 1.3rem;
+              }
+            }
+            @include respond(tab-port) {
+              label {
+                font-size: 0.8rem;
+              }
+              textarea {
+                font-size: 1rem;
+                margin: 0.6rem 0;
+                padding: 0.6rem 1rem;
+              }
+            }
           }
           &--btn-container {
             margin-top: 2rem;
             margin-left: 0.5rem;
+            @include respond(tab-land) {
+              margin-top: 1.8rem;
+            }
+            @include respond(tab-port) {
+              margin-top: 1.5rem;
+            }
           }
         }
       }

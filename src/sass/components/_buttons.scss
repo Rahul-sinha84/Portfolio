@@ -12,6 +12,9 @@
       color: white;
       font-weight: bold;
       font-size: 1.2rem;
+      @include respond(tab-port) {
+        font-size: 1rem;
+      }
     }
   }
   &__back {
@@ -28,10 +31,21 @@
       font-weight: bold;
       font-size: 1.2rem;
       visibility: hidden;
+      @include respond(tab-port) {
+        font-size: 1rem;
+      }
     }
   }
   &:hover &__org {
     transform: translate(0rem, 0rem);
+  }
+  @include respond(tab-port) {
+    &:hover &__org {
+      transform: translate(-0.5rem, -0.5rem);
+    }
+    &:active &__org {
+      transform: translate(0rem, 0rem);
+    }
   }
 }
 .btn2 {
@@ -43,6 +57,9 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 1.2rem;
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
   }
   &__arrow {
     margin-left: 0.2rem;
@@ -53,5 +70,13 @@
   }
   &__text:hover + &__arrow {
     margin-left: 0.8rem;
+  }
+  @include respond(tab-port) {
+    &__text:hover + &__arrow {
+      margin-left: 0.2rem;
+    }
+    &__text:active + &__arrow {
+      margin-left: 0.8rem;
+    }
   }
 }

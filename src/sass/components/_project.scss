@@ -2,12 +2,24 @@
   width: 30rem;
   margin-right: 2rem;
   background-color: #fff;
+  @include respond(tab-land) {
+    width: 28rem;
+  }
+  @include respond(tab-port) {
+    width: 25rem;
+  }
   &__header {
     &--img {
       overflow: hidden;
       img {
         width: 30rem;
         transition: all 0.5s;
+        @include respond(tab-land) {
+          width: 28rem;
+        }
+        @include respond(tab-port) {
+          width: 25rem;
+        }
       }
     }
   }
@@ -27,9 +39,45 @@
         padding: 1rem 0;
       }
     }
+    @include respond(tab-land) {
+      &--title {
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+      }
+
+      &--btn {
+        & > div {
+          padding: 0.8rem 0;
+        }
+      }
+    }
+    @include respond(tab-port) {
+      &--title {
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+      }
+
+      &--btn {
+        & > div {
+          padding: 0.6rem 0;
+        }
+      }
+    }
   }
   &:hover &__header &__header--img img {
     transform: scale(1.1) rotate(1deg);
     filter: blur(1px);
+  }
+  @include respond(tab-port) {
+    &:hover &__header &__header--img img {
+      transform: scale(1) rotate(0deg);
+      filter: blur(0px);
+    }
+    &:active &__header &__header--img img {
+      transform: scale(1.1) rotate(1deg);
+      filter: blur(1px);
+    }
   }
 }

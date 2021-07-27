@@ -3,6 +3,9 @@
   display: flex;
   width: 85%;
   margin: 5rem auto;
+  @include respond(tab-land) {
+    align-items: center;
+  }
   &__left {
     display: flex;
     flex: 1;
@@ -15,6 +18,14 @@
       font-weight: 700;
       line-height: 4rem;
       margin: 1.5rem 0;
+      @include respond(tab-land) {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin: 1rem 0;
+      }
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
       span {
       }
     }
@@ -23,14 +34,23 @@
     &--btn-container {
       display: flex;
       margin: 1.5rem 0;
+      @include respond(tab-land) {
+        margin: 2rem 0;
+      }
     }
   }
   &__right {
     flex: 1;
     border-radius: 100%;
     background-size: cover;
+    background-position: top;
     background-image: url(../assets/profile-photo.jpg);
     box-shadow: 0 0 2rem 2rem $bg-color inset;
     filter: grayscale(100%);
+    @include respond(tab-land) {
+      box-shadow: none;
+      background-position: top;
+      height: 50%;
+    }
   }
 }
