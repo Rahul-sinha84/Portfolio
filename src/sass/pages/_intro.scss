@@ -1,8 +1,7 @@
 .intro {
-  height: 83.5vh;
   display: flex;
   width: 85%;
-  margin: 5rem auto;
+  margin: 8rem auto;
   @include respond(tab-land) {
     align-items: center;
   }
@@ -41,16 +40,8 @@
   }
   &__right {
     flex: 1;
-    border-radius: 100%;
-    background-size: cover;
-    background-position: top;
-    background-image: url(../assets/profile-photo.jpg);
-    box-shadow: 0 0 2rem 2rem $bg-color inset;
-    filter: grayscale(100%);
-    @include respond(tab-land) {
-      box-shadow: none;
-      background-position: top;
-      height: 50%;
+    img {
+      width: 100%;
     }
   }
 }

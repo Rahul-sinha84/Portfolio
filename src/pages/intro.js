@@ -2,6 +2,7 @@ import React from "react";
 import { Btn1 } from "../components/btn";
 import { Btn2 } from "../components/btn";
 import resumePath from "../assets/resume.pdf";
+import photo from "../assets/photo.jpg";
 
 const intro = () => {
   return (
@@ -20,7 +21,9 @@ const intro = () => {
           <Btn2 toDownload={true} href={resumePath} text="Download CV" />
         </div>
       </div>
-      <div className="intro__right"></div>
+      <div className="intro__right">
+        <img src={photo} alt="profile" />
+      </div>
     </div>
   );
 };

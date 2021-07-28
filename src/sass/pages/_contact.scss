@@ -83,6 +83,8 @@
                 transition: all 0.2s;
                 &:hover {
                   stroke: #000;
+                  fill: #000;
+                  transform: scale(1.1);
                   filter: grayscale(0);
                 }
                 @include respond(tab-land) {

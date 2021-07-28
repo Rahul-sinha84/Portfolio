@@ -182,10 +182,9 @@ body {
       filter: blur(1px); } }
 
 .intro {
-  height: 83.5vh;
   display: flex;
   width: 85%;
-  margin: 5rem auto; }
+  margin: 8rem auto; }
   @media (max-width: 75em) {
     .intro {
       align-items: center; } }
@@ -216,18 +215,9 @@ body {
         .intro__left--btn-container {
           margin: 2rem 0; } }
   .intro__right {
-    flex: 1;
-    border-radius: 100%;
-    background-size: cover;
-    background-position: top;
-    background-image: url(../assets/profile-photo.jpg);
-    box-shadow: 0 0 2rem 2rem #fff inset;
-    filter: grayscale(100%); }
-    @media (max-width: 75em) {
-      .intro__right {
-        box-shadow: none;
-        background-position: top;
-        height: 50%; } }
+    flex: 1; }
+    .intro__right img {
+      width: 100%; }
 
 .about {
   width: 85%;
@@ -638,6 +628,8 @@ body {
           .contact__container--container--left__info--social a img:hover,
           .contact__container--container--left__info--social a svg:hover {
             stroke: #000;
+            fill: #000;
+            transform: scale(1.1);
             filter: grayscale(0); }
           @media (max-width: 75em) {
             .contact__container--container--left__info--social a img,
