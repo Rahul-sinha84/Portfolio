@@ -104,15 +104,11 @@ const Projects = () => {
             <div
               className="project__container--slider__btn-container--btn"
               id="prev"
-            >
-              <img src={arrLeft} alt="arrow_left" />
-            </div>
+            ></div>
             <div
               className="project__container--slider__btn-container--btn"
               id="next"
-            >
-              <img src={arrRight} alt="arrow_right" />
-            </div>
+            ></div>
           </div>
         </div>
       </div>

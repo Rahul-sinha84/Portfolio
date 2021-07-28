@@ -65,12 +65,9 @@
           height: 3rem;
           width: 3rem;
           background-color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           cursor: pointer;
-          img {
-          }
+          background-repeat: no-repeat;
+          background-position: center;
           @include respond(tab-port) {
             height: 2.5rem;
             width: 2.5rem;
@@ -78,9 +75,13 @@
         }
         #next {
           margin-left: 1rem;
+          background-image: url(../assets/arrow-right.svg);
           @include respond(tab-port) {
             margin-left: 0.8rem;
           }
+        }
+        #prev {
+          background-image: url(../assets/arrow-left.svg);
         }
       }
     }

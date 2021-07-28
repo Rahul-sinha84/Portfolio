@@ -2,7 +2,7 @@ import React from "react";
 import { Btn1 } from "../components/btn";
 import { Btn2 } from "../components/btn";
 import resumePath from "../assets/resume.pdf";
-import photo from "../assets/photo.jpg";
+import photo from "../assets/photo.svg";
 
 const intro = () => {
   return (
