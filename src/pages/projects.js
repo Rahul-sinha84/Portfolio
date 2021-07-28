@@ -58,39 +58,46 @@ const Projects = () => {
             className="project__container--slider__components"
           >
             <Project
+              link="https://github.com/Rahul-sinha84/CryptoTrust"
+              name="Cryptotrust"
+              desc="A well trusted dApp for ICO where each and everyone is responsible for the development of the project idea..."
+              imgSrc={CryptoTrust}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Coding-monsters"
+              name="Coding Monsters"
+              desc="An E-Learning website made fully responsive by using pure HTML and CSS, also integrated payment gateway of Razorpay."
+              imgSrc={CodingMonsters}
+            />
+            <Project
               link="https://github.com/Rahul-sinha84/Bloggyz"
               name="Bloggyz"
+              desc="Its a simple blog app. Where anyone can post a blog and could comment in any blog. The users also have thier respective profiles. The website is highly interactive."
               imgSrc={Bloggyz}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Portfolio"
+              name="Portfolio"
+              desc="My Portfolio website made with pure HTML and CSS, built using React."
+              imgSrc={Portfolio}
             />
             <Project
               link="https://github.com/Rahul-sinha84/Natours"
               name="Natours"
+              desc="Its a website template for a touring site. Made with HTML and CSS using their advanced concepts.."
               imgSrc={Natours}
             />
             <Project
               link="https://github.com/Rahul-sinha84/Search-It"
               name="Search it"
+              desc="An app to view the images based on the user's search input, used Unsplash's API"
               imgSrc={SearchIt}
             />
             <Project
               link="https://github.com/Rahul-sinha84/RGB-game"
               name="RGB Game"
+              desc="Its a game to identify the correct combination of RGB(red, green and blue) colors by selecting the correct the color."
               imgSrc={Rbg}
-            />
-            <Project
-              link="https://github.com/Rahul-sinha84/Portfolio"
-              name="Portfolio"
-              imgSrc={Portfolio}
-            />
-            <Project
-              link="https://github.com/Rahul-sinha84/Coding-monsters"
-              name="Coding Monsters"
-              imgSrc={CodingMonsters}
-            />
-            <Project
-              link="https://github.com/Rahul-sinha84/CryptoTrust"
-              name="Cryptotrust"
-              imgSrc={CryptoTrust}
             />
           </div>
           <div className="project__container--slider__btn-container">
