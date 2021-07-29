@@ -23,14 +23,14 @@ const Projects = () => {
     container = document.querySelector("#container");
     prevBtn.addEventListener("click", () => {
       if (count !== 0) {
-        count += 30;
+        count += 22;
         container.style.transform = `translateX(${count}rem)`;
       }
     });
 
     nextBtn.addEventListener("click", () => {
       if (count !== -180) {
-        count -= 30;
+        count -= 22;
         container.style.transform = `translateX(${count}rem)`;
         console.log(count);
       }

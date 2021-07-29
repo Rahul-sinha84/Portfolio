@@ -9,8 +9,8 @@ const intro = () => {
     <div className="intro">
       <div className="intro__left">
         <div className="intro__left--title">
-          <span className="gradient-text">Lorem ipsum se </span>
-          dolor sed do sit amet conse
+          <span className="gradient-text">Lorem ipsum se </span> dolor sed do
+          sit amet conse
         </div>
         <div className="intro__left--sub-title para">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem

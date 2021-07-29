@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import mailImg from "../assets/mail.svg";
 import phoneImg from "../assets/phone.svg";
-import devfolioImg from "../assets/devfolio.png";
-import linkedinImg from "../assets/lnkdin.png";
 import { Btn1 } from "../components/btn";
-const emailToSend = "rahul.sinha1562001@gmail.com";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
@@ -15,22 +13,30 @@ const Contact = () => {
     if (!firstName || !lastName || !email || !message) {
       return alert("Please fill all the values...");
     }
-    await fetch(`https://formsubmit.co/${emailToSend}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ firstName, lastName, email, message }),
-    })
-      .then((res) => {
+    const target = {
+      firstName,
+      lastName,
+      email,
+      message,
+    };
+    await emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        target,
+        process.env.REACT_APP_USER_ID
+      )
+      .then((response) => {
         setFirstName("");
         setLastName("");
         setEmail("");
         setMessage("");
+        alert(
+          "Email has been successfully sent, I will get back to you soon..."
+        );
       })
       .catch((err) => {
-        alert("Some error occurred !!");
-        console.log(err);
+        alert("Something went wrong !!, Please try again later...");
       });
   };
   return (

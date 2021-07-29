@@ -6,7 +6,7 @@ const section = () => {
       <div className="section__container">
         <div className="section__container--experience">
           <div className="section__container--experience__title">
-            💼 Work Experience
+            💼 Experience
           </div>
           <div className="section__container--experience__container">
             <div className="section__container--experience__container--item">

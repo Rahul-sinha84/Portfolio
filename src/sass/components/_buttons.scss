@@ -16,6 +16,9 @@
       @include respond(tab-port) {
         font-size: 1rem;
       }
+      @include respond(phone) {
+        font-size: 0.7rem;
+      }
     }
   }
   &__back {
@@ -34,6 +37,9 @@
       visibility: hidden;
       @include respond(tab-port) {
         font-size: 1rem;
+      }
+      @include respond(phone) {
+        font-size: 0.7rem;
       }
     }
   }
@@ -64,6 +70,9 @@
     }
     @include respond(tab-port) {
       font-size: 1rem;
+    }
+    @include respond(phone) {
+      font-size: 0.8rem;
     }
   }
   &__arrow {

@@ -8,6 +8,9 @@
   @include respond(tab-port) {
     width: 25rem;
   }
+  @include respond(phone) {
+    width: 20rem;
+  }
   &__header {
     &--img {
       overflow: hidden;
@@ -19,6 +22,9 @@
         }
         @include respond(tab-port) {
           width: 25rem;
+        }
+        @include respond(phone) {
+          width: 20rem;
         }
       }
     }
