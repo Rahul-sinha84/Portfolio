@@ -23,6 +23,15 @@ html {
 body {
   background-color: #fff; }
 
+.display-none {
+  display: none !important; }
+
+.translate-up {
+  transform: translateY(-30rem) !important; }
+
+.translate-down {
+  transform: translateY(3rem) !important; }
+
 .para {
   font-size: 1.2rem;
   color: #666; }
@@ -45,10 +54,54 @@ body {
   margin: 2rem auto; }
   .menubar__left {
     flex: 1; }
+    @media (max-width: 37.5em) {
+      .menubar__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+    .menubar__left--toggle {
+      width: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 3rem;
+      display: none; }
+      .menubar__left--toggle__bar {
+        transition: all 0.2s;
+        display: block;
+        background-color: #000;
+        height: 0.2rem;
+        margin: 0.5rem 0;
+        border-radius: 20px;
+        width: 100%; }
+      @media (max-width: 37.5em) {
+        .menubar__left--toggle {
+          display: initial; } }
+    .menubar__left input {
+      display: none; }
+      .menubar__left input:checked + .menubar__left--toggle .two {
+        width: 0; }
+      .menubar__left input:checked + .menubar__left--toggle .one {
+        transform: rotate(225deg) translate(-0.5rem, -0.5rem); }
+      .menubar__left input:checked + .menubar__left--toggle .three {
+        transform: rotate(-225deg) translate(-0.5rem, 0.5rem); }
   .menubar__right {
     display: flex;
     flex: 2;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    transition: all 0.5s; }
+    @media (max-width: 37.5em) {
+      .menubar__right {
+        position: absolute;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        border-left: 1px solid #777;
+        border-bottom: 1px solid #777;
+        border-right: 1px solid #777;
+        transform: translateY(-30rem);
+        width: 85%; } }
   .menubar--link {
     cursor: pointer;
     width: fit-content;
@@ -59,6 +112,12 @@ body {
   @media (max-width: 56.25em) {
     .menubar {
       font-size: 0.8rem; } }
+  @media (max-width: 37.5em) {
+    .menubar {
+      flex-direction: column;
+      font-size: 1.5rem; }
+      .menubar--link {
+        padding: 1rem 0; } }
 
 .btn1 {
   position: relative;

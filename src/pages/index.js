@@ -10,7 +10,7 @@ import Footer from "./footer";
 const index = () => {
   return (
     <>
-      {/* <Menu /> */}
+      <Menu />
       <Intro />
       <About />
       <Project />

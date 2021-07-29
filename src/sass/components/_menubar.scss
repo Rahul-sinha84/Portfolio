@@ -7,11 +7,61 @@
   margin: 2rem auto;
   &__left {
     flex: 1;
+    @include respond(phone) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--toggle {
+      width: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 3rem;
+      display: none;
+      &__bar {
+        transition: all 0.2s;
+        display: block;
+        background-color: #000;
+        height: 0.2rem;
+        margin: 0.5rem 0;
+        border-radius: 20px;
+        width: 100%;
+      }
+      @include respond(phone) {
+        display: initial;
+      }
+    }
+    input {
+      display: none;
+      &:checked + .menubar__left--toggle .two {
+        width: 0;
+      }
+      &:checked + .menubar__left--toggle .one {
+        transform: rotate(225deg) translate(-0.5rem, -0.5rem);
+      }
+      &:checked + .menubar__left--toggle .three {
+        transform: rotate(-225deg) translate(-0.5rem, 0.5rem);
+      }
+    }
   }
   &__right {
     display: flex;
     flex: 2;
     justify-content: space-evenly;
+    transition: all 0.5s;
+    @include respond(phone) {
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+      border-left: 1px solid #777;
+      border-bottom: 1px solid #777;
+      border-right: 1px solid #777;
+      transform: translateY(-30rem);
+      width: 85%;
+    }
   }
   &--link {
     cursor: pointer;
@@ -25,5 +75,12 @@
   }
   @include respond(tab-port) {
     font-size: 0.8rem;
+  }
+  @include respond(phone) {
+    flex-direction: column;
+    font-size: 1.5rem;
+    &--link {
+      padding: 1rem 0;
+    }
   }
 }

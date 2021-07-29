@@ -9,3 +9,12 @@ html {
 body {
   background-color: $bg-color;
 }
+.display-none {
+  display: none !important;
+}
+.translate-up {
+  transform: translateY(-30rem) !important;
+}
+.translate-down {
+  transform: translateY(3rem) !important;
+}
