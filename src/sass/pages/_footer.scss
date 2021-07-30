@@ -1,4 +1,24 @@
 .footer {
   height: 40vh;
   background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__note {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  @include respond(tab-port) {
+    height: 20vh;
+    &__note {
+      font-size: 2rem;
+    }
+  }
+  @include respond(phone) {
+    height: 10vh;
+    &__note {
+      font-size: 1rem;
+      width: 85%;
+    }
+  }
 }

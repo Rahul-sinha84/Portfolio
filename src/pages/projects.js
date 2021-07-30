@@ -29,10 +29,9 @@ const Projects = () => {
     });
 
     nextBtn.addEventListener("click", () => {
-      if (count !== -180) {
+      if (count >= -150) {
         count -= 22;
         container.style.transform = `translateX(${count}rem)`;
-        console.log(count);
       }
     });
   }, []);
