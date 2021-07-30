@@ -44,12 +44,11 @@ const Projects = () => {
         </div>
         <div className="project__container--typo">
           <div className="project__container--typo__title">
-            Lorem ipsum dolor sit amet
+            It's an art to share your idea through code...
           </div>
           <div className="project__container--typo__sub-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            consectetur adipiscing elit duis tristique.
+            A Project is complete when it starts working for you. Rather than
+            you working for it.
           </div>
         </div>
         <div className="project__container--slider">

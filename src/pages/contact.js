@@ -51,9 +51,9 @@ const Contact = () => {
               Get in touch
             </div>
             <div className="contact__container--container--left__sub-title para">
-              Have a project in mind? Looking to partner or work together? Reach
-              out through the form and I'll get back to you in the next 48
-              hours.
+              Have a project in mind? or a position to fill in? Looking to
+              partner or work together? Reach out through the form and I'll get
+              back to you soon.
             </div>
             <div className="contact__container--container--left__info">
               <div className="contact__container--container--left__info--item">

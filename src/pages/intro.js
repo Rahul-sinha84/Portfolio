@@ -9,12 +9,11 @@ const intro = () => {
     <div className="intro">
       <div className="intro__left">
         <div className="intro__left--title">
-          <span className="gradient-text">Lorem ipsum se </span> dolor sed do
-          sit amet conse
+          The nature of Portfolio is always a{" "}
+          <span className="gradient-text">work in progress</span>
         </div>
         <div className="intro__left--sub-title para">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+          MERN Stack || React-native || Ethereum
         </div>
         <div className="intro__left--btn-container">
           <Btn1 href="#contactMe" text="Contact Me" />

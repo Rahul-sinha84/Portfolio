@@ -5,9 +5,16 @@ const about = () => {
     <div id="aboutMe" className="about">
       <div className="about__heading gradient-text">ABOUT ME</div>
       <div className="about__info para">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis
-        scelerisque fermentum dui. Aliquam id diam maecenas ultricies mi.
+        <b>MERN</b> stack Web developer. Knows how the backend and front end
+        works. Also knows <b>Advanced concept of CSS3 and HTML5</b>. Also have a
+        good knowledge on <b>Javascript (ES6)</b>. Knows <b>React and Redux</b>{" "}
+        for a better development environment. And also knows about{" "}
+        <b>Firebase</b> system. Also knows the concept of <b>mongoDB</b> and
+        knows how to make it <b>realtime using pusher</b>. Further I also know{" "}
+        <b>GraphQL</b> which makes the life of the developer much more easier. I
+        also know a decent amount of <b>React-Native</b>. With all these I am
+        also a strong believer of <b>Decetralization</b> or a{" "}
+        <b>Blockchain enthusiast</b>.
       </div>
       <div className="about__lower">
         <div className="about__lower--left">
