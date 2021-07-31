@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import arrLeft from "../assets/arrow-left.svg";
 import arrRight from "../assets/arrow-right.svg";
 import Project from "../components/project";
-import Bloggyz from "../assets/bloggyz.png";
-import Natours from "../assets/natours.png";
-import SearchIt from "../assets/searchit.png";
-import Rbg from "../assets/rbg.png";
-import Portfolio from "../assets/portfolio.png";
-import CodingMonsters from "../assets/codingMonsters.png";
-import CryptoTrust from "../assets/cryptotrust.png";
+import Bloggyz from "../assets/bloggyz.jpg";
+import Natours from "../assets/natours.jpg";
+import SearchIt from "../assets/searchit.jpg";
+import Rbg from "../assets/rbg.jpg";
+import Portfolio from "../assets/portfolio.jpg";
+import CodingMonsters from "../assets/codingMonsters.jpg";
+import CryptoTrust from "../assets/cryptotrust.jpg";
 
 const Projects = () => {
   var prevBtn;
