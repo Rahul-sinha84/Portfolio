@@ -38,10 +38,12 @@ $breakpoint argument choices
   box-sizing: border-box; }
 
 html {
-  font-family: "Merriweather Sans", sans-serif; }
+  font-family: "Merriweather Sans", sans-serif;
+  scroll-behavior: smooth; }
 
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
 
 .display-none {
   display: none !important; }
@@ -275,6 +277,27 @@ body {
     .project-component:active .project-component__header .project-component__header--img img {
       transform: scale(1.1) rotate(1deg);
       filter: blur(1px); } }
+
+.toTop {
+  position: fixed;
+  cursor: pointer;
+  bottom: 3rem;
+  right: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.233);
+  color: #000; }
+  .toTop:visited, .toTop:active {
+    color: #000; }
+  @media (max-width: 37.5em) {
+    .toTop {
+      right: 1rem;
+      bottom: 1rem; } }
 
 .intro {
   display: flex;

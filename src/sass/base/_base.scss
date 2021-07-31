@@ -5,9 +5,11 @@
 }
 html {
   font-family: "Merriweather Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: $bg-color;
+  position: relative;
 }
 .display-none {
   display: none !important;
