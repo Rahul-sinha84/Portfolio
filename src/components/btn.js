@@ -14,16 +14,10 @@ export const Btn1 = ({ text, href = "#" }) => {
   );
 };
 
-export const Btn2 = ({ text, href = "#", toDownload = false }) => {
+export const Btn2 = ({ text, href = "#" }) => {
   return (
     <div className="btn2">
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href={href}
-        download={toDownload ? "Rahul's Resume" : null}
-        className="btn2__text"
-      >
+      <a target="_blank" rel="noreferrer" href={href} className="btn2__text">
         {text}
       </a>
       <div className="btn2__arrow">

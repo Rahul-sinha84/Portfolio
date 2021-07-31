@@ -17,7 +17,7 @@ const intro = () => {
         </div>
         <div className="intro__left--btn-container">
           <Btn1 href="#contactMe" text="Contact Me" />
-          <Btn2 toDownload={true} href={resumePath} text="Download CV" />
+          <Btn2 href={resumePath} text="Download CV" />
         </div>
       </div>
       <div className="intro__right">
