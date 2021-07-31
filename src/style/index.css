@@ -191,8 +191,9 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.2rem;
-    text-decoration: none; }
-    .btn2__text:visited {
+    text-decoration: none;
+    color: #000; }
+    .btn2__text:visited, .btn2__text:active {
       color: #000; }
     @media (max-width: 56.25em) {
       .btn2__text {
