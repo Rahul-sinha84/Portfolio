@@ -65,7 +65,9 @@
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
-    &:visited {
+    color: #000;
+    &:visited,
+    &:active {
       color: #000;
     }
     @include respond(tab-port) {
