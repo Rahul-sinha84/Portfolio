@@ -1,6 +1,7 @@
 .toTop {
   position: fixed;
   cursor: pointer;
+  z-index: 100;
   bottom: 3rem;
   right: 3rem;
   width: 3rem;
