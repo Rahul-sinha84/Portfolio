@@ -9,6 +9,9 @@ import Rbg from "../assets/rbg.jpg";
 import Portfolio from "../assets/portfolio.jpg";
 import CodingMonsters from "../assets/codingMonsters.jpg";
 import CryptoTrust from "../assets/cryptotrust.jpg";
+import MoneyManage from "../assets/moneyManagement.jpeg";
+import DinstApp from "../assets/dinstaApp.jpg";
+import ICO from "../assets/icoScratch.jpg";
 
 const Projects = () => {
   var prevBtn;
@@ -29,7 +32,7 @@ const Projects = () => {
     });
 
     nextBtn.addEventListener("click", () => {
-      if (count >= -150) {
+      if (count >= -225) {
         count -= 22;
         container.style.transform = `translateX(${count}rem)`;
       }
@@ -62,7 +65,25 @@ const Projects = () => {
               imgSrc={CryptoTrust}
             />
             <Project
-              link="https://github.com/Rahul-sinha84/Coding-monsters"
+              link="https://gitlab.com/Rahul-sinha84/ico-scratch"
+              name="ICO"
+              desc="An ICO made from scratch in ethereum, with ERC20 standard"
+              imgSrc={ICO}
+            />
+            <Project
+              link="https://gitlab.com/Rahul-sinha84/instagram-decentralised"
+              name="Instagram-Decentralised"
+              desc="A Dapp to upload the image and tip the owner of the image"
+              imgSrc={DinstApp}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Money-Tracker-App"
+              name="Money-Tracker-App"
+              desc="A React-Native app to manage your money, made specifically for my purpose"
+              imgSrc={MoneyManage}
+            />
+            <Project
+              link="https://codingmonsters.com"
               name="Coding Monsters"
               desc="An E-Learning website made fully responsive by using pure HTML and CSS, also integrated payment gateway of Razorpay."
               imgSrc={CodingMonsters}
