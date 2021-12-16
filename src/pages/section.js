@@ -12,6 +12,32 @@ const section = () => {
             <div className="section__container--experience__container--item">
               <div className="section__container--experience__container--item__left">
                 <div className="section__container--experience__container--item__left--title">
+                  Fettle
+                </div>
+                <div className="section__container--experience__container--item__left--sub-title">
+                  A fitness social application.
+                </div>
+                <div className="section__container--experience__container--item__left--position">
+                  MERN Developer
+                  <ul>
+                    <li>
+                      Got a complete understanding of an Mobile Application.
+                    </li>
+                    <li>Integrations with the Backend.</li>
+                    <li>Managed Cache data in Mobile App. </li>
+                    <li>Wrote Modular code.</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="section__container--experience__container--item__right">
+                <div className="section__container--experience__container--item__right--duration">
+                  • 9/2021 - Present
+                </div>
+              </div>
+            </div>
+            <div className="section__container--experience__container--item">
+              <div className="section__container--experience__container--item__left">
+                <div className="section__container--experience__container--item__left--title">
                   Coding Monsters
                 </div>
                 <div className="section__container--experience__container--item__left--sub-title">
