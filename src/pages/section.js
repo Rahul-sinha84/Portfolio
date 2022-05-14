@@ -31,7 +31,7 @@ const section = () => {
               </div>
               <div className="section__container--experience__container--item__right">
                 <div className="section__container--experience__container--item__right--duration">
-                  • 9/2021 - Present
+                  • 9/2021 - 1/2022
                 </div>
               </div>
             </div>
