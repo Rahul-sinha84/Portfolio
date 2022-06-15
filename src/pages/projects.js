@@ -12,6 +12,8 @@ import CryptoTrust from "../assets/cryptotrust.jpg";
 import MoneyManage from "../assets/moneyManagement.jpeg";
 import DinstApp from "../assets/dinstaApp.jpg";
 import ICO from "../assets/icoScratch.jpg";
+import BiDirectional from "../assets/bidirectional.jpeg";
+import UniDirectional from "../assets/unidirectional.jpeg";
 
 const Projects = () => {
   var prevBtn;
@@ -32,7 +34,7 @@ const Projects = () => {
     });
 
     nextBtn.addEventListener("click", () => {
-      if (count >= -225) {
+      if (count >= -290) {
         count -= 22;
         container.style.transform = `translateX(${count}rem)`;
       }
@@ -63,6 +65,18 @@ const Projects = () => {
               name="Cryptotrust"
               desc="A well trusted dApp for ICO where each and everyone is responsible for the development of the project idea..."
               imgSrc={CryptoTrust}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Bi-Directional-Payment-Channel"
+              name="Bi-Directional Payment Channel"
+              desc="A full working web Dapp used to pay bi-directionally between two payers, without paying transaction fees at every transaction made !!"
+              imgSrc={BiDirectional}
+            />
+            <Project
+              link="https://github.com/Rahul-sinha84/Uni-Directional-Payment-Channel"
+              name="Uni-Directional Payment Channel"
+              desc="A full web-application that is used for transferring money to the receiver by verifying signature signed by the payer off-chain."
+              imgSrc={UniDirectional}
             />
             <Project
               link="https://gitlab.com/Rahul-sinha84/ico-scratch"

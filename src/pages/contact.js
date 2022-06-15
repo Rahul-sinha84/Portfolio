@@ -92,7 +92,7 @@ const Contact = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.linkedin.com/in/rahul-sinha-b5774119a/"
+                  href="https://www.linkedin.com/in/rahul-sinha84/"
                 >
                   <svg
                     fill="#777"
