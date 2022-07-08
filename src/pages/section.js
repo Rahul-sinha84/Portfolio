@@ -21,11 +21,16 @@ const section = () => {
                   MERN Developer
                   <ul>
                     <li>
-                      Got a complete understanding of an Mobile Application.
+                      Worked on <b>React-Native</b> and its libraries
                     </li>
-                    <li>Integrations with the Backend.</li>
-                    <li>Managed Cache data in Mobile App. </li>
-                    <li>Wrote Modular code.</li>
+                    <li>
+                      Integrations with the Backend (<b>NodeJS</b> server).
+                    </li>
+                    <li>Developed and Managed UI components. </li>
+                    <li>
+                      Made a website in <b>React</b> for showcasing the
+                      application.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -46,10 +51,17 @@ const section = () => {
                 <div className="section__container--experience__container--item__left--position">
                   MERN Developer
                   <ul>
-                    <li>Made full website using only HTML5 and CSS3.</li>
-                    <li>Added Payment gateway(Razorpay).</li>
+                    <li>
+                      Worked on <b>NodeJS</b>, <b>React & Redux</b>, <b>SASS</b>
+                      .
+                    </li>
+                    <li>
+                      Made full website using <b>HTML5 & CSS3</b>.
+                    </li>
+                    <li>
+                      Added <b>Payment gateway</b> (Razorpay).
+                    </li>
                     <li>Google sheet setup to store all the data.</li>
-                    <li>Fuzzy Search-Bar to search for the courses.</li>
                   </ul>
                 </div>
               </div>
@@ -65,20 +77,23 @@ const section = () => {
                   Lofaz
                 </div>
                 <div className="section__container--experience__container--item__left--sub-title">
-                  A Platform which let shopkeepers to sell their products
-                  online.
+                  A platform for shopkeepers to let their products online
                 </div>
                 <div className="section__container--experience__container--item__left--position">
                   MERN Developer (Mainly Backend)
                   <ul>
-                    <li>Creating REST apis.</li>
-                    <li>Creating Schemas.</li>
-                    <li>Firebase Push Notification.</li>
-                    <li>CI/CD pipeline in Gitlab(Heroku).</li>
-                    <li>2factor message functionality.</li>
                     <li>
-                      node-cron to dump the mongoDB data to S3 bucket(AWS) at a
-                      regular interval.
+                      Worked on <b>NodeJS</b>, <b>ExpressJS</b> and{" "}
+                      <b>MongoDB</b>.
+                    </li>
+                    <li>
+                      Made APIs, Schemas, and handle authenticity of articles.
+                    </li>
+                    <li>
+                      Worked on <b>AWS</b>.
+                    </li>
+                    <li>
+                      Created <b>CI/CD pipeline</b> on Heroku.
                     </li>
                   </ul>
                 </div>
