@@ -12,7 +12,45 @@ const section = () => {
             <div className="section__container--experience__container--item">
               <div className="section__container--experience__container--item__left">
                 <div className="section__container--experience__container--item__left--title">
-                  Fettle
+                  <a
+                    href="https://bringin.xyz"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Bringin
+                  </a>
+                </div>
+                <div className="section__container--experience__container--item__left--sub-title">
+                  Bitcoin offramp and onramp solution.
+                </div>
+                <div className="section__container--experience__container--item__left--position">
+                  Software Engineer
+                  <ul>
+                    <li>Made NextJS application for selling Bitcoin.</li>
+                    <li>
+                      Integrations with the Backend (<b>NodeJS</b> server).
+                    </li>
+                    <li>Developed and Managed UI components. </li>
+                    <li>Worked on proxy servers on NextJS.</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="section__container--experience__container--item__right">
+                <div className="section__container--experience__container--item__right--duration">
+                  • 8/2022 - Present
+                </div>
+              </div>
+            </div>
+            <div className="section__container--experience__container--item">
+              <div className="section__container--experience__container--item__left">
+                <div className="section__container--experience__container--item__left--title">
+                  <a
+                    href="https://www.fettle.plus/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Fettle
+                  </a>
                 </div>
                 <div className="section__container--experience__container--item__left--sub-title">
                   A fitness social application.
@@ -43,7 +81,13 @@ const section = () => {
             <div className="section__container--experience__container--item">
               <div className="section__container--experience__container--item__left">
                 <div className="section__container--experience__container--item__left--title">
-                  Coding Monsters
+                  <a
+                    href="https://www.linkedin.com/in/coding-monsters/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Coding Monsters
+                  </a>
                 </div>
                 <div className="section__container--experience__container--item__left--sub-title">
                   An online teaching platform.
@@ -74,7 +118,13 @@ const section = () => {
             <div className="section__container--experience__container--item">
               <div className="section__container--experience__container--item__left">
                 <div className="section__container--experience__container--item__left--title">
-                  Lofaz
+                  <a
+                    href="https://lofaz.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Lofaz
+                  </a>
                 </div>
                 <div className="section__container--experience__container--item__left--sub-title">
                   A platform for shopkeepers to let their products online

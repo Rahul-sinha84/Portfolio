@@ -26,7 +26,7 @@ const about = () => {
               </div>
               <div className="about__lower--left__lower--item__container-2">
                 <div className="about__lower--left__lower--item__container-2--duration">
-                  • 2019 - Present
+                  • 2019 - 2023
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@ const about = () => {
                   Puna International School, Gandhinagar
                 </div>
                 <div className="about__lower--left__lower--item__container-1--sub-title">
-                  Schooling(12th standard - 78%)
+                  Schooling(12th standard)
                 </div>
               </div>
               <div className="about__lower--left__lower--item__container-2">
@@ -51,7 +51,7 @@ const about = () => {
                   Kendriya Vidayalaya, AFS Chakeri Kanpur
                 </div>
                 <div className="about__lower--left__lower--item__container-1--sub-title">
-                  Schooling(10th standard - 10CGPA)
+                  Schooling(10th standard)
                 </div>
               </div>
               <div className="about__lower--left__lower--item__container-2">
@@ -66,6 +66,7 @@ const about = () => {
           <div className="about__lower--right__heading">📌 Skills</div>
           <div className="about__lower--right__lower">
             <div className="about__lower--right__lower--item">Javascript</div>
+            <div className="about__lower--right__lower--item">Typescript</div>
             <div className="about__lower--right__lower--item">MongoDB</div>
             <div className="about__lower--right__lower--item">HTML5 & CSS3</div>
             <div className="about__lower--right__lower--item">C++ & C</div>
@@ -73,7 +74,9 @@ const about = () => {
             <div className="about__lower--right__lower--item">
               Ethereum & Solidity
             </div>
+            <div className="about__lower--right__lower--item">Bitcoin</div>
             <div className="about__lower--right__lower--item">ReactJS</div>
+            <div className="about__lower--right__lower--item">NextJS</div>
             <div className="about__lower--right__lower--item">React-Native</div>
             <div className="about__lower--right__lower--item">GraphQL</div>
             <div className="about__lower--right__lower--item">ReduxJS</div>

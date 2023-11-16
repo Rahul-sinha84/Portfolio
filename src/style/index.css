@@ -608,7 +608,12 @@ body {
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            text-decoration: underline; }
+            text-decoration: none; }
+            .section__container--experience__container--item__left--title a {
+              color: black;
+              text-decoration: none; }
+              .section__container--experience__container--item__left--title a:hover {
+                text-decoration: underline; }
             @media (max-width: 75em) {
               .section__container--experience__container--item__left--title {
                 font-size: 1rem; } }
